@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:spoty/home.dart';
+import 'package:spoty/pages/artistas.dart';
+import 'package:spoty/pages/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,10 +20,11 @@ class MyApp extends StatelessWidget {
         colorScheme: .fromSeed(seedColor: Colors.green),
       ),
 
-      initialRoute: '/home',
+      initialRoute: '/artistas',
 
       routes: {
         '/home':(context) => Home(),
+        '/artistas':(context) => Artistas()
       }
     );
   }
